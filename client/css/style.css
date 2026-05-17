@@ -1,0 +1,145 @@
+body {
+	overflow: hidden.noselect */
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	text-align: center;
+}
+
+.scrollbar-primary::-webkit-scrollbar {
+	width: 12px;
+	background-color: #0c0d16;
+}
+
+.scrollbar-primary::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+	background-color: #4285F4;
+}
+
+.scrollbar-primary {
+	scrollbar-color: #4285F4 #F5F5F5;
+}
+
+#row, .form-control {
+	text-align: center;
+}
+
+.chart {
+	border-bottom: 1px solid white;
+	width: 100%;
+	height: 100%;
+}
+
+#riskDiv {
+	position: absolute;
+	top: 0px;
+	//width: 200px;
+	transform: translate(-50%, 0px);
+	left: 50%;
+}
+
+#posDiv {
+	border-right: 1px solid white;
+}
+
+#gameBtns {
+	position: fixed;
+	top: 0px;
+	left: 4px;
+	z-index: 999999;
+}
+
+#exitBtn {
+	position: fixed;
+	top: 41px;
+	right: 60px;
+	z-index: 999999;
+}
+
+#withdrawDiv {
+	display: inline-block;
+}
+
+#balanceText {
+	margin-left: 20px;
+}
+
+#balanceDiv {
+	position: fixed;
+	top: 3px;
+	right: 10px;
+	z-index: 999999;
+	color: yellow;
+}
+
+#loading {
+	font-size: 72px;
+	margin-top: 200px;
+}
+
+#contextMenu {
+	border: 1px solid black;
+	text-align: center;
+	position: absolute;
+	width: 200px;
+	height: 320px;
+	z-index: 999999;
+	padding-top: 10px;
+}
+
+#priceInput {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+#qtyInput {
+	margin-left: 10px;
+}
+
+#baseSpan {
+	margin-right: 10px;
+}
+
+#qtySlider {
+	margin-left: 10px;
+	width: 180px;
+}
+
+#posCloseBtn {
+	position: fixed;
+	width: 50px;
+	left: 0px;
+	bottom: -16px;
+}
+
+.editable:hover {
+	background-color: #1c1d36;
+}
+
+.pencil {
+	cursor: url(../img/pencil.png), auto;
+}
+
+.topRow {
+	height: 10px;
+}
+
+.secondRow{
+	margin-top: 10px;
+}
+
+.right {
+	text-align: right;
+}
+
+.left {
+	text-align: left;
+}
+
+.pointer {
+	cursor: pointer;
+}

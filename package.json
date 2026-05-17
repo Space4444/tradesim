@@ -1,0 +1,16 @@
+{
+  "name": "tradesim",
+  "version": "1.0.0",
+  "description": "",
+  "main": "serv.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node serv.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dukascopy-node": "^1.46.4",
+    "express": "^4.22.2"
+  }
+}
