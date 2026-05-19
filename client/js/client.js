@@ -416,6 +416,10 @@ async function loadHistory(symbol, start) {
             return await (await fetch(`/loadhistory?symbol=${symbol}&start=${start}&bias=${this.bias}`) ).json();
         }
 
+        if (!data?.length) {
+            alert('Something went wrong');
+        }
+
         return data.map( ({open, high, low, close, timestamp}) => {
             const time = timestamp - this.bias - 60000;
             return [time, open, high, low, close];
