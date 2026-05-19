@@ -376,7 +376,7 @@ function updateRange() {
 	return [first, last];
 }
 
-async function loadHistory(symbol, start) {
+// async function loadHistory(symbol, start) {
 	// return new Promise( (resolve, reject) => {
 		// const WS = new WebSocket('wss://ifccd.net:2053/');
 		
@@ -399,8 +399,30 @@ async function loadHistory(symbol, start) {
 		// };
 
         
-    return await (await fetch(`/loadhistory?symbol=${symbol}&start=${start}&bias=${this.bias}`) ).json();
+    // return await (await fetch(`/loadhistory?symbol=${symbol}&start=${start}&bias=${this.bias}`) ).json();
 	// });
+// }
+
+async function loadHistory(symbol, start) {
+    try {
+        const data = await getRealTimeRates({
+            instrument: symbol.replace('/', '').toLowerCase(),
+            dates: {
+                from: new Date(start),
+                to: new Date(start + 86400000 * 100)
+            },
+            timeframe: 'm1',
+            format: 'json'
+        });
+
+        return data.map( ({open, high, low, close, timestamp}) => {
+            const time = timestamp - this.bias - 60000;
+            return [time, open, high, low, close];
+        });
+    } catch (error) {
+        alert(`error: ${error}`);
+        return [];
+    }
 }
 
 function zoom(e, chart) {
