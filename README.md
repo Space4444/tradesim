@@ -2,6 +2,8 @@
 
 This is forex trading simulator written in JavaScript. It was made to help learning intraday trading.
 
+[Click to check it out](https://space4444.github.io/tradesim)
+
 <img width="1905" height="907" alt="image" src="https://github.com/user-attachments/assets/12cc695b-f64f-4434-b059-2a35416e98f1" />
 
 Firstly, it downloads 100 days of 1m historical data
@@ -16,9 +18,3 @@ You can modify pending orders' prices and volumes in the control panel or just d
 
 Also you can withdraw virtual money to prevent accidental liquidation of all balance.
 You trading summary is saved and displayed at the main page.
-
-To run, you must have NodeJS installed. Download the repo and start the server:
-```cmd
-  node serv.js
-```
-Then go to ```localhost:2222``` in your browser.
