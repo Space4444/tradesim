@@ -397,9 +397,6 @@ function updateRange() {
 		// 	resolve(data);
 		// 	WS.close();
 		// };
-
-        
-    // return await (await fetch(`/loadhistory?symbol=${symbol}&start=${start}&bias=${this.bias}`) ).json();
 	// });
 // }
 
@@ -414,6 +411,10 @@ async function loadHistory(symbol, start) {
             timeframe: 'm1',
             format: 'json'
         });
+
+        if (data.length === 0) {
+            return await (await fetch(`/loadhistory?symbol=${symbol}&start=${start}&bias=${this.bias}`) ).json();
+        }
 
         return data.map( ({open, high, low, close, timestamp}) => {
             const time = timestamp - this.bias - 60000;

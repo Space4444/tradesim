@@ -1,5 +1,5 @@
 body {
-	overflow: hidden.noselect */
+	overflow: hidden;
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
 	-khtml-user-select: none;
@@ -37,7 +37,7 @@ body {
 #riskDiv {
 	position: absolute;
 	top: 0px;
-	//width: 200px;
+	width: 200px;
 	transform: translate(-50%, 0px);
 	left: 50%;
 }
