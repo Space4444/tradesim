@@ -6,6 +6,11 @@
 
 This is forex trading simulator written in JavaScript. It was made to help learning intraday trading.
 
+Firstly, it downloads 100 days of 1m historical data
+of random forex pair and random time range from Dukascopy. Then it adds a random number to all dates displayed on the chart.
+This is done in order to make remembering charts more difficult.
+Then price candlesticks are displayed on the chart and you can start simulated trading.
+
 ## [Web demo](https://space4444.github.io/tradesim)
 
 ## Features
@@ -20,20 +25,22 @@ This is forex trading simulator written in JavaScript. It was made to help learn
 
 ## Tech stack
 - [Bootstrap](https://getbootstrap.com/)
+- [Dukascopy API](https://www.dukascopy.com/trading-tools/api/documentation)
 
-## Overview
+## Usage
 
-Firstly, it downloads 100 days of 1m historical data
-of random forex pair and random time range from Dukascopy. Then it adds a random number to all dates displayed on the chart.
-This is done in order to make remembering charts more difficult.
+At the top left corner you can pause/resume and adjust speed of the simulation.
 
-Then price candles are displayed on the chart and you can start simulated trading.
-Chart zooming automatically adjusts candles timeframe. Also you can place horisontal levels at the chart.
+Chart zooming is done by scrolling mouse wheel. The candlestick time interval is automatically adjusted if the scale is too large or too small.
 
-To place order, right-click on a chart at the desired price level, specify order volume and choose between limit and stop order types.
-You can modify pending orders' prices and volumes in the control panel or just drag them on the chart to change price.
+Right-click on any place at the chart to open context menu. By default, order price will be equal to the one where you clicked on the chart.
+At the context menu you can input order price and volume, change the volume by moving slider, select between limit or stop order and
+place horizontal lines on the chart to mark price levels.
 
-Also you can withdraw virtual money to prevent accidental liquidation of all balance.
+You can modify prices and volumes or pending orders in the control panel. Prices can also be changed by dragging them on the chart.
+
+Also you can withdraw virtual money by clicking on the green button at the top right corner.
+
 You trading summary is saved and displayed at the main page.
 
 ## License
