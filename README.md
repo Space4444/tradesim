@@ -39,6 +39,8 @@ place horizontal lines on the chart to mark price levels.
 
 You can modify prices and volumes or pending orders in the control panel. Prices can also be changed by dragging orders on the chart.
 
+Informaion about opened position is displayed at the bottom left section.
+
 Also you can withdraw virtual money by clicking on the green button at the top right corner.
 
 You trading summary is saved and displayed at the main page.
