@@ -1,10 +1,26 @@
 # Tradesim
 
+![Banner](https://github.com/user-attachments/assets/12cc695b-f64f-4434-b059-2a35416e98f1)
+
+## Introduction
+
 This is forex trading simulator written in JavaScript. It was made to help learning intraday trading.
 
-[Click to check it out](https://space4444.github.io/tradesim)
+## [Web demo](https://space4444.github.io/tradesim)
 
-<img width="1905" height="907" alt="image" src="https://github.com/user-attachments/assets/12cc695b-f64f-4434-b059-2a35416e98f1" />
+## Features
+- Automatic downloading random Forex pair history
+- Limit and stop orders
+- Ability to mark price levels
+- Virtual money withdrawal
+- Automatic detection of new order price by clicking on the chart
+- Ability to move orders on chart 
+- Saving trading statistics
+
+## Tech stack
+- [Bootstrap](https://getbootstrap.com/)
+
+## Overview
 
 Firstly, it downloads 100 days of 1m historical data
 of random forex pair and random time range from Dukascopy. Then it adds a random number to all dates displayed on the chart.
