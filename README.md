@@ -37,7 +37,7 @@ Right-click on any place at the chart to open context menu. By default, order pr
 At the context menu you can input order price and volume, change the volume by moving slider, select between limit or stop order and
 place horizontal lines on the chart to mark price levels.
 
-You can modify prices and volumes or pending orders in the control panel. Prices can also be changed by dragging them on the chart.
+You can modify prices and volumes or pending orders in the control panel. Prices can also be changed by dragging orders on the chart.
 
 Also you can withdraw virtual money by clicking on the green button at the top right corner.
 
