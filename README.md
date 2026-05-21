@@ -14,7 +14,8 @@ This is forex trading simulator written in JavaScript. It was made to help learn
 - Ability to mark price levels
 - Virtual money withdrawal
 - Automatic detection of new order price by clicking on the chart
-- Ability to move orders on chart 
+- Ability to move orders on chart
+- Adjusting speed of price movement
 - Saving trading statistics
 
 ## Tech stack
