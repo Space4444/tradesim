@@ -35,3 +35,7 @@ You can modify pending orders' prices and volumes in the control panel or just d
 
 Also you can withdraw virtual money to prevent accidental liquidation of all balance.
 You trading summary is saved and displayed at the main page.
+
+## License
+
+[MIT](LICENSE) © Space4444
