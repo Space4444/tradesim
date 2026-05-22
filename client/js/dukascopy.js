@@ -60,6 +60,10 @@ async function getRealTimeRates({
     let fetchedRates = [];
     try {
       const rawResponse = await fetch(proxyURL + '?' + url);
+      
+      loadBar.value = (+toDate - targetTimestamp) / (+toDate - +fromDate);
+      console.log(loadBar.value);
+      
       const rawResponseText = await rawResponse.text();
       const responseClean = rawResponseText.replace(`_callbacks____${fetchSeed}(`, "").replace(");", "");
       fetchedRates = JSON.parse(responseClean);
