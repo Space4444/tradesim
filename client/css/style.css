@@ -143,7 +143,3 @@ body {
 .pointer {
 	cursor: pointer;
 }
-
-progress {
-    max-width: 100%;
-}

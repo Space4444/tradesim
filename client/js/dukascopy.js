@@ -61,8 +61,7 @@ async function getRealTimeRates({
     try {
       const rawResponse = await fetch(proxyURL + '?' + url);
       
-      loadBar.value = (+toDate - targetTimestamp) / (+toDate - +fromDate);
-      console.log(loadBar.value);
+      loadBar.style.width = (+toDate - targetTimestamp) / (+toDate - +fromDate) * 100 + '%';
       
       const rawResponseText = await rawResponse.text();
       const responseClean = rawResponseText.replace(`_callbacks____${fetchSeed}(`, "").replace(");", "");
