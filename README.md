@@ -8,7 +8,7 @@ This is forex trading simulator written in JavaScript. It was made to help learn
 
 Firstly, it downloads 100 days of 1m historical data
 of random forex pair and random time range from Dukascopy. Then it adds a random number to all dates displayed on the chart.
-This is done in order to make remembering charts more difficult.
+This is done in order to make charts more difficult to remember.
 Then price candlesticks are displayed on the chart and you can start simulated trading.
 
 ## [Web demo](https://space4444.github.io/tradesim)
